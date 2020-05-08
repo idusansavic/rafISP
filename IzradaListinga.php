@@ -3,5 +3,6 @@
 
 interface IzradaListinga
 {
+    public function napraviListing() : string;
 
 }
