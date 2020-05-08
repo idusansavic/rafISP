@@ -1,5 +1,6 @@
 <?php
 
+
 class InternetProvajder
 {
     public string $ime;
