@@ -15,10 +15,11 @@ class PostpaidKorisnik extends Korisnik
      * @param string $adresa
      * @param int $brojUgovora
      * @param TarifniPaket $tarifniPaket
+     * @param array $tarifniDodaci
      */
-    public function __construct(float $prekoracenje, InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket)
+    public function __construct(float $prekoracenje, InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci)
     {
-        parent::__construct($internetProvajder, $ime, $prezime, $adresa, $brojUgovora, $tarifniPaket);
+        parent::__construct($internetProvajder, $ime, $prezime, $adresa, $brojUgovora, $tarifniPaket, $tarifniDodaci);
         $this->prekoracenje = $prekoracenje;
     }
 

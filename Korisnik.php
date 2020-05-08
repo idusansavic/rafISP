@@ -1,5 +1,7 @@
 <?php
 
+require_once "ListingUnos.php";
+
 abstract class Korisnik implements IzradaListinga
 {
     public InternetProvajder $internetProvajder;
