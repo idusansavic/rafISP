@@ -1,6 +1,9 @@
 <?php
 
-require_once "requireList.php";
+require_once "Korisnik.php";
+require_once "InternetProvajder.php";
+require_once "TarifniPaket.php";
+require_once "TarifniDodatak.php";
 
 class PrepaidKorisnik extends Korisnik
 {
@@ -15,10 +18,11 @@ class PrepaidKorisnik extends Korisnik
      * @param string $adresa
      * @param int $brojUgovora
      * @param TarifniPaket $tarifniPaket
+     * @param array $tarifniDodaci
      */
-    public function __construct(float $kredit, InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket)
+    public function __construct(float $kredit, InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci)
     {
-        parent::__construct($internetProvajder, $ime, $prezime, $adresa, $brojUgovora, $tarifniPaket);
+        parent::__construct($internetProvajder, $ime, $prezime, $adresa, $brojUgovora, $tarifniPaket, $tarifniDodaci);
         $this->kredit = $kredit;
     }
 
@@ -40,3 +44,4 @@ class PrepaidKorisnik extends Korisnik
     }
 
 }
+

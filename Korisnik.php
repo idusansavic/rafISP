@@ -1,7 +1,5 @@
 <?php
 
-require_once "requireList.php";
-
 abstract class Korisnik implements IzradaListinga
 {
     public InternetProvajder $internetProvajder;
@@ -20,8 +18,9 @@ abstract class Korisnik implements IzradaListinga
      * @param string $adresa
      * @param int $brojUgovora
      * @param TarifniPaket $tarifniPaket
+     * @param array $tarifniDodaci
      */
-    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket)
+    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci)
     {
         $this->internetProvajder = $internetProvajder;
         $this->ime = $ime;
@@ -29,6 +28,7 @@ abstract class Korisnik implements IzradaListinga
         $this->adresa = $adresa;
         $this->brojUgovora = $brojUgovora;
         $this->tarifniPaket = $tarifniPaket;
+        $this->tarifniDodaci = $tarifniDodaci;
     }
 
 

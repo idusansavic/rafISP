@@ -1,6 +1,6 @@
 <?php
 
-require_once "requireList.php";
+
 
 class PostpaidKorisnik extends Korisnik
 {
