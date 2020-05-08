@@ -5,12 +5,12 @@ require_once "ListingUnos.php";
 abstract class Korisnik implements IzradaListinga
 {
     public InternetProvajder $internetProvajder;
-    public string $ime;
-    public string $prezime;
-    public string $adresa;
-    public int $brojUgovora;
-    public TarifniPaket $tarifniPaket;
-    public array $tarifniDodaci = [];
+    public $ime;
+    public $prezime;
+    public $adresa;
+    public $brojUgovora;
+    public $tarifniPaket;
+    public $tarifniDodaci;
 
     /**
      * Korisnik constructor.
@@ -22,7 +22,7 @@ abstract class Korisnik implements IzradaListinga
      * @param TarifniPaket $tarifniPaket
      * @param array $tarifniDodaci
      */
-    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci)
+    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci = [])
     {
         $this->internetProvajder = $internetProvajder;
         $this->ime = $ime;
