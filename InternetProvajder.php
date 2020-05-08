@@ -1,10 +1,11 @@
 <?php
 
+require_once "requireList.php";
 
 class InternetProvajder
 {
     public string $ime;
-    protected array $listaKorisnika = [];
+    public array $listaKorisnika = [];
 
     /**
      * InternetProvajder constructor.

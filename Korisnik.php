@@ -1,15 +1,16 @@
 <?php
 
+require_once "requireList.php";
 
 abstract class Korisnik implements IzradaListinga
 {
     public InternetProvajder $internetProvajder;
-    protected string $ime;
-    protected string $prezime;
-    protected string $adresa;
-    protected int $brojUgovora;
-    protected TarifniPaket $tarifniPaket;
-    protected array $tarifniDodaci = [];
+    public string $ime;
+    public string $prezime;
+    public string $adresa;
+    public int $brojUgovora;
+    public TarifniPaket $tarifniPaket;
+    public array $tarifniDodaci = [];
 
     /**
      * Korisnik constructor.

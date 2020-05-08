@@ -1,5 +1,7 @@
 <?php
 
+require_once "requireList.php";
+
 $facebook = new TarifniDodatak(400, "Facebook");
 $twitter = new TarifniDodatak(300, "Twitter");
 $instagram = new TarifniDodatak(500, "Instagram");

@@ -1,9 +1,10 @@
 <?php
-require_once "Korisnik.php";
+
+require_once "requireList.php";
 
 class PrepaidKorisnik extends Korisnik
 {
-    protected float $kredit;
+    public float $kredit;
 
     /**
      * PrepaidKorisnik constructor.
