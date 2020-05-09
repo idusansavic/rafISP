@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="Nesto">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
+    <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="InternetProvajder&#10;TarifniPaket&#10;return empty string">
+      <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="2788000" />
+      <workItem from="1589036361918" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>
@@ -67,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589036605239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="InternetProvajder&#10;TarifniPaket&#10;return empty string">
+      <created>1589043783723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589043783723</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,7 +92,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nesto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nesto" />
+    <MESSAGE value="InternetProvajder&#10;TarifniPaket&#10;return empty string" />
+    <option name="LAST_COMMIT_MESSAGE" value="InternetProvajder&#10;TarifniPaket&#10;return empty string" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog" timestamp="1589036682667">
