@@ -44,7 +44,7 @@ abstract class Korisnik implements IzradaListinga
 
     }
 
-    public function napraviListing() : string
+    public function napraviListing() : string //Vraca string
     {
         return;
 
