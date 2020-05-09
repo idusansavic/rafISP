@@ -5,7 +5,6 @@ require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
 require_once "TarifniDodatak.php";
 
-
 class PostpaidKorisnik extends Korisnik
 {
     public float $prekoracenje;
@@ -40,6 +39,7 @@ class PostpaidKorisnik extends Korisnik
 
     public function surfuj(string $url, int $mb): bool
     {
+        return true;
         // TODO: Implement surfuj() method.
     }
 

@@ -35,6 +35,7 @@ class PrepaidKorisnik extends Korisnik
 
     public function surfuj(string $url, int $mb): bool
     {
+        return true;
         // TODO: Implement surfuj() method.
     }
 
