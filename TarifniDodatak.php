@@ -1,11 +1,9 @@
 <?php
 
-
-
 class TarifniDodatak
 {
-    public $cena;
-    public $tipDodatka;
+    public float $cena;
+    public string $tipDodatka;
 
     /**
      * TarifniDodatak constructor.

@@ -2,27 +2,27 @@
 
 class TarifniPaket
 {
-    public $maksimalnaBrzina;
-    public $cenaPaketa;
-    public $neogranicenSaobracaj;
-    public $gb;
-    public $cenaPoGigabajtu;
+    public int $maksimalnaBrzina;
+    public float $cenaPaketa;
+    public bool $neogranicenSaobracaj;
+    public int $mb;
+    public float $cenaPoMegabajtu;
 
     /**
      * TarifniPaket constructor.
      * @param int $maksimalnaBrzina
      * @param float $cenaPaketa
      * @param bool $neogranicenSaobracaj
-     * @param int $gb
-     * @param float $cenaPoGigabajtu
+     * @param int $mb
+     * @param float $cenaPoMegabajtu
      */
-    public function __construct(int $maksimalnaBrzina, float $cenaPaketa, bool $neogranicenSaobracaj, int $gb, float $cenaPoGigabajtu)
+    public function __construct(int $maksimalnaBrzina, float $cenaPaketa, bool $neogranicenSaobracaj, int $mb, float $cenaPoMegabajtu)
     {
         $this->maksimalnaBrzina = $maksimalnaBrzina;
         $this->cenaPaketa = $cenaPaketa;
         $this->neogranicenSaobracaj = $neogranicenSaobracaj;
-        $this->gb = $gb;
-        $this->cenaPoGigabajtu = $cenaPoGigabajtu;
+        $this->mb = $mb;
+        $this->cenaPoMegabajtu = $cenaPoMegabajtu;
     }
 
 }

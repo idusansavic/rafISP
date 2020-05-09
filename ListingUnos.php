@@ -1,12 +1,10 @@
 <?php
 
-
-
 class ListingUnos
 {
 
-    public $url;
-    public $mb;
+    public string $url;
+    public int $mb;
 
     /**
      * ListingUnos constructor.

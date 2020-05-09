@@ -1,20 +1,21 @@
 <?php
 
-require_once "Korisnik.php";
+require_once "IzradaListinga.php";
 require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
+require_once "ListingUnos.php";
 require_once "TarifniDodatak.php";
-require_once "IzradaListinga.php";
+
 
 abstract class Korisnik implements IzradaListinga
 {
-    public $internetProvajder;
-    public $ime;
-    public $prezime;
-    public $adresa;
-    public $brojUgovora;
-    public $tarifniPaket;
-    public $tarifniDodaci = [];
+    public InternetProvajder $internetProvajder;
+    public string $ime;
+    public string $prezime;
+    public string $adresa;
+    public int $brojUgovora;
+    public TarifniPaket $tarifniPaket;
+    public array $tarifniDodaci = [];
 
     /**
      * Korisnik constructor.

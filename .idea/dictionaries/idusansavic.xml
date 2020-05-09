@@ -3,10 +3,12 @@
     <words>
       <w>adresa</w>
       <w>broj</w>
+      <w>brzina</w>
       <w>cena</w>
       <w>dodaci</w>
       <w>dodaj</w>
       <w>dodatak</w>
+      <w>dodatka</w>
       <w>dopuni</w>
       <w>generisi</w>
       <w>gigabajtu</w>
@@ -14,14 +16,19 @@
       <w>korisnik</w>
       <w>korisnika</w>
       <w>kredit</w>
+      <w>lista</w>
       <w>listinga</w>
       <w>maksimalna</w>
       <w>megabajte</w>
+      <w>megabajtu</w>
       <w>naplatu</w>
       <w>napravi</w>
       <w>neogranicen</w>
+      <w>objekata</w>
       <w>paket</w>
+      <w>paketa</w>
       <w>postpaidd</w>
+      <w>poziva</w>
       <w>prekoracenje</w>
       <w>prezime</w>
       <w>prikaz</w>

@@ -4,11 +4,11 @@ require_once "Korisnik.php";
 require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
 require_once "TarifniDodatak.php";
-require_once "IzradaListinga.php";
+
 
 class PostpaidKorisnik extends Korisnik
 {
-    public $prekoracenje;
+    public float $prekoracenje;
 
     /**
      * PrepaidKorisnik constructor.

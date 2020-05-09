@@ -4,11 +4,11 @@ require_once "Korisnik.php";
 require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
 require_once "TarifniDodatak.php";
-require_once "IzradaListinga.php";
+
 
 class PrepaidKorisnik extends Korisnik
 {
-    public $kredit;
+    public float $kredit;
 
     /**
      * PrepaidKorisnik constructor.
@@ -34,7 +34,7 @@ class PrepaidKorisnik extends Korisnik
 
     }
 
-    public function surfuj(string $url, int $mb): bool
+    public function surfuj(string $url, int $mb) : bool
     {
         return true;
         // TODO: Implement surfuj() method.

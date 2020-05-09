@@ -1,11 +1,11 @@
 <?php
 
-//require_once "Korisnik.php";
+require_once "Korisnik.php";
 
 class InternetProvajder
 {
-    public $ime;
-    public $listaKorisnika;
+    public string $ime;
+    public array $listaKorisnika;
 
     /**
      * InternetProvajder constructor.
