@@ -4,6 +4,7 @@ require_once "Korisnik.php";
 require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
 require_once "TarifniDodatak.php";
+require_once "IzradaListinga.php";
 
 class PrepaidKorisnik extends Korisnik
 {
