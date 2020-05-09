@@ -19,19 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="InternetProvajder&#10;TarifniPaket&#10;return empty string">
-      <change afterPath="$PROJECT_DIR$/instanceObjekata.php" afterDir="false" />
+    <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="Male izmene i vracanje atributa">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternetProvajder.php" beforeDir="false" afterPath="$PROJECT_DIR$/InternetProvajder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListingUnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListingUnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TarifniDodatak.php" beforeDir="false" afterPath="$PROJECT_DIR$/TarifniDodatak.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TarifniPaket.php" beforeDir="false" afterPath="$PROJECT_DIR$/TarifniPaket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instanceObjekata.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requireList.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="5561000" />
+      <workItem from="1589036361918" duration="5874000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>
@@ -91,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589044084029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Male izmene i vracanje atributa">
+      <created>1589046548325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589046548325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +110,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nesto" />
     <MESSAGE value="InternetProvajder&#10;TarifniPaket&#10;return empty string" />
-    <option name="LAST_COMMIT_MESSAGE" value="InternetProvajder&#10;TarifniPaket&#10;return empty string" />
+    <MESSAGE value="Male izmene i vracanje atributa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Male izmene i vracanje atributa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog" timestamp="1589036682667">

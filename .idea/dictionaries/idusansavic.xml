@@ -2,6 +2,7 @@
   <dictionary name="idusansavic">
     <words>
       <w>adresa</w>
+      <w>bojovic</w>
       <w>broj</w>
       <w>brzina</w>
       <w>cena</w>
@@ -10,23 +11,33 @@
       <w>dodatak</w>
       <w>dodatka</w>
       <w>dopuni</w>
+      <w>fiksna</w>
+      <w>frenki</w>
+      <w>frenkijeva</w>
       <w>generisi</w>
       <w>gigabajtu</w>
+      <w>iptv</w>
       <w>izrada</w>
+      <w>kada</w>
       <w>korisnik</w>
       <w>korisnika</w>
+      <w>kralja</w>
       <w>kredit</w>
       <w>lista</w>
       <w>listinga</w>
+      <w>listingunos</w>
       <w>maksimalna</w>
       <w>megabajte</w>
       <w>megabajtu</w>
+      <w>mihailovic</w>
       <w>naplatu</w>
       <w>napravi</w>
       <w>neogranicen</w>
       <w>objekata</w>
       <w>paket</w>
       <w>paketa</w>
+      <w>petar</w>
+      <w>planeta</w>
       <w>postpaidd</w>
       <w>poziva</w>
       <w>prekoracenje</w>
@@ -34,12 +45,18 @@
       <w>prikaz</w>
       <w>provajder</w>
       <w>racun</w>
+      <w>radosavljevic</w>
       <w>saobracaj</w>
       <w>surfuj</w>
+      <w>surfuje</w>
+      <w>takodje</w>
       <w>tarifni</w>
+      <w>todor</w>
       <w>ugovora</w>
       <w>ukupno</w>
       <w>unos</w>
+      <w>zabelezi</w>
+      <w>zaobracaj</w>
     </words>
   </dictionary>
 </component>
