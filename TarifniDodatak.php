@@ -4,8 +4,8 @@
 
 class TarifniDodatak
 {
-    public float $cena;
-    public string $tipDodatka;
+    public $cena;
+    public $tipDodatka;
 
     /**
      * TarifniDodatak constructor.

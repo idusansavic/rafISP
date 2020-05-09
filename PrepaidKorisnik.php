@@ -8,7 +8,7 @@ require_once "IzradaListinga.php";
 
 class PrepaidKorisnik extends Korisnik
 {
-    public float $kredit;
+    public $kredit;
 
     /**
      * PrepaidKorisnik constructor.

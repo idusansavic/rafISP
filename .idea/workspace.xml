@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="Nesto">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetProvajder.php" beforeDir="false" afterPath="$PROJECT_DIR$/InternetProvajder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListingUnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListingUnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TarifniDodatak.php" beforeDir="false" afterPath="$PROJECT_DIR$/TarifniDodatak.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TarifniPaket.php" beforeDir="false" afterPath="$PROJECT_DIR$/TarifniPaket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bfwGXqiXUEWajmZeZkzTeXH293" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="" />
+      <created>1589036360413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589036360413</updated>
+      <workItem from="1589036361918" duration="810000" />
+    </task>
+    <task id="LOCAL-00001" summary="Nesto">
+      <created>1589036605239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589036605239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nesto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nesto" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog" timestamp="1589036682667">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589036682667" />
+    <state x="1436" y="370" key="SettingsEditor" timestamp="1589036508425">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1436" y="370" key="SettingsEditor/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589036508425" />
+    <state x="1727" y="653" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589036525103">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1727" y="653" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589036525103" />
+  </component>
+</project>

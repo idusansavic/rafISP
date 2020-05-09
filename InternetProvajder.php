@@ -4,8 +4,8 @@
 
 class InternetProvajder
 {
-    public string $ime;
-    public array $listaKorisnika;
+    public $ime;
+    public $listaKorisnika;
 
     /**
      * InternetProvajder constructor.

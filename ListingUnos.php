@@ -5,8 +5,8 @@
 class ListingUnos
 {
 
-    public string $url;
-    public int $mb;
+    public $url;
+    public $mb;
 
     /**
      * ListingUnos constructor.

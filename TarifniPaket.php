@@ -2,11 +2,11 @@
 
 class TarifniPaket
 {
-    public int $maksimalnaBrzina;
-    public float $cenaPaketa;
-    public bool $neogranicenSaobracaj;
-    public int $gb;
-    public float $cenaPoGigabajtu;
+    public $maksimalnaBrzina;
+    public $cenaPaketa;
+    public $neogranicenSaobracaj;
+    public $gb;
+    public $cenaPoGigabajtu;
 
     /**
      * TarifniPaket constructor.
