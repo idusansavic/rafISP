@@ -7,7 +7,7 @@ require_once "TarifniDodatak.php";
 
 class PrepaidKorisnik extends Korisnik
 {
-    public $kredit;
+    public float $kredit;
 
     /**
      * PrepaidKorisnik constructor.
