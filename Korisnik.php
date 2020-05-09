@@ -8,12 +8,12 @@ require_once "IzradaListinga.php";
 
 abstract class Korisnik implements IzradaListinga
 {
-    public InternetProvajder $internetProvajder;
+    public $internetProvajder;
     public $ime;
     public $prezime;
     public $adresa;
     public $brojUgovora;
-    public TarifniPaket $tarifniPaket;
+    public $tarifniPaket;
     public $tarifniDodaci = [];
 
     /**
@@ -45,7 +45,7 @@ abstract class Korisnik implements IzradaListinga
 
     public function napraviListing() : string
     {
-        return;
+        return "";
 
     }
 
