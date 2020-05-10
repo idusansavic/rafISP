@@ -40,7 +40,10 @@ echo "<br>";
 
 
 //ListingUnos se poziva iz surfuj pa dodaj listing unos = new listingunos, takodje se zabelezi zaobracaj poziva kada korisnik surfuje
-
+$listingUnos1 = new ListingUnos("www.twitch.com", 230);
+var_dump($listingUnos1);
+echo "<br>";
+echo "<br>";
 
 // PrepaidKorisnik instance
 $prepaidUser1 = new PrepaidKorisnik( 1500, $internetProvajder, "Petar", "Bojovic", "Kralja Petra 9", 101, $prepaidSilver, array($facebook, $instagram));
@@ -58,4 +61,8 @@ echo "<br>";
 echo "<br>";
 
 
-
+//TESTOVI METODA
+$listingUnos1->dodajMegabajte(430);
+var_dump($listingUnos1);
+echo "<br>";
+echo "<br>";

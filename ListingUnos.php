@@ -20,6 +20,9 @@ class ListingUnos
 
     public function dodajMegabajte(int $mb)
     {
+        $this->mb = $this->mb + $mb;
+        echo ("Povecani megabajti za postojeci listing unos");
+        echo "<br>";
 
     }
 
