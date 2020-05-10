@@ -16,6 +16,7 @@ abstract class Korisnik implements IzradaListinga
     public int $brojUgovora;
     public TarifniPaket $tarifniPaket;
     public array $tarifniDodaci = [];
+    public array $listaListingUnosa = [];
 
     /**
      * Korisnik constructor.
@@ -26,8 +27,9 @@ abstract class Korisnik implements IzradaListinga
      * @param int $brojUgovora
      * @param TarifniPaket $tarifniPaket
      * @param array $tarifniDodaci
+     * @param array $listaListingUnosa
      */
-    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci)
+    public function __construct(InternetProvajder $internetProvajder, string $ime, string $prezime, string $adresa, int $brojUgovora, TarifniPaket $tarifniPaket, array $tarifniDodaci, array $listaListingUnosa)
     {
         $this->internetProvajder = $internetProvajder;
         $this->ime = $ime;
@@ -36,24 +38,25 @@ abstract class Korisnik implements IzradaListinga
         $this->brojUgovora = $brojUgovora;
         $this->tarifniPaket = $tarifniPaket;
         $this->tarifniDodaci = $tarifniDodaci;
+        $this->listaListingUnosa = $listaListingUnosa;
     }
 
 
     public function dodajListingUnos(ListingUnos $listingUnos)
     {
+        // TODO: Implement dodajListingUnos() method.
 
     }
 
     public function napraviListing() : string
     {
         return "";
+        // TODO: Implement napraviListing() method.
 
     }
 
     abstract function surfuj(string $url, int $mb) : bool;
 
     abstract function dodajTarifniDodatak(TarifniDodatak $tarifniDodatak);
-
-
 
 }
