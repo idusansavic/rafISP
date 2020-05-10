@@ -40,7 +40,7 @@ class InternetProvajder
     public function prikazPrepaidKorisnika()
     {
         foreach ($this->listaKorisnika as $korisnik) {
-            if ($korisnik->tarifniPaket->neogranicenSaobracaj == false) {
+            if ($korisnik instanceof PrepaidKorisnik) {
                 echo "Broj ugovora: " . $korisnik->brojUgovora;
                 echo "<br>";
                 echo "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime;
@@ -62,7 +62,7 @@ class InternetProvajder
     public function prikazPostpaidKorisnika()
     {
         foreach ($this->listaKorisnika as $korisnik) {
-            if ($korisnik->tarifniPaket->neogranicenSaobracaj == true) {
+            if ($korisnik instanceof PostpaidKorisnik) {
                 echo "Broj ugovora: " . $korisnik->brojUgovora;
                 echo "<br>";
                 echo "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime;

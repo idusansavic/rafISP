@@ -1,5 +1,8 @@
 <?php
 
+require_once "Korisnik.php";
+
+
 class ListingUnos
 {
 
@@ -20,7 +23,7 @@ class ListingUnos
 
     public function dodajMegabajte(int $mb)
     {
-        $this->mb = $this->mb + $mb;
+        $this->mb += $mb;
         echo ("Povecani megabajti za " . $this->url . ".");
         echo "<br>";
         echo "<br>";

@@ -53,7 +53,7 @@ class PrepaidKorisnik extends Korisnik
             echo "<br>";
             echo "<br>";
         }
-        elseif ($this->tarifniPaket->neogranicenSaobracaj == false)
+        elseif ($this instanceof PrepaidKorisnik)
         {
             if ($tarifniDodatak->tipDodatka == "IPTV" or $tarifniDodatak->tipDodatka == "Fiksna")
             {

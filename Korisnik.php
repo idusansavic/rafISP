@@ -44,7 +44,24 @@ abstract class Korisnik implements IzradaListinga
 
     public function dodajListingUnos(ListingUnos $listingUnos)
     {
-        // TODO: Implement dodajListingUnos() method.
+        foreach ($this->listaListingUnosa as $unos)
+        {
+            if ($unos->url == $listingUnos->url)
+            {
+                $unos->dodajMegabajte($listingUnos->mb);
+                echo "Dodali ste MB za postojeci listing unos, adresa " . $listingUnos->url;
+                echo "<br>";
+                echo "<br>";
+
+
+            }
+
+        }
+
+        array_push($this->listaListingUnosa, $listingUnos);
+        echo "Dodali ste novi listing unos za adresu " . $listingUnos->url;
+        echo "<br>";
+        echo "<br>";
 
     }
 

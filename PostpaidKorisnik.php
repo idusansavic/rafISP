@@ -44,7 +44,7 @@ class PostpaidKorisnik extends Korisnik
 
     }
 
-    public function generisiRacun() //URADITI STRING CONCATENATION
+    public function generisiRacun()
     {
 
        echo "Broj ugovora: " . $this->brojUgovora . ";";
@@ -79,7 +79,7 @@ class PostpaidKorisnik extends Korisnik
             echo "<br>";
             echo "<br>";
         }
-        elseif ($this->tarifniPaket->neogranicenSaobracaj == true)
+        elseif ($this instanceof PostpaidKorisnik)
         {
             if ($tarifniDodatak->tipDodatka == "IPTV" or $tarifniDodatak->tipDodatka == "Fiksna")
             {

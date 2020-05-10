@@ -23,6 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternetProvajder.php" beforeDir="false" afterPath="$PROJECT_DIR$/InternetProvajder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListingUnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListingUnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +54,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
+  <component name="RunManager">
+    <configuration name="Korisnik.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Korisnik.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Korisnik.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="34354000" />
+      <workItem from="1589036361918" duration="40900000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>
@@ -114,6 +128,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Male izmene i vracanje atributa" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1369" y="435" key="#Korisnik.php" timestamp="1589151038960">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1369" y="435" key="#Korisnik.php/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589151038960" />
     <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog" timestamp="1589036682667">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
