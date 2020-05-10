@@ -58,8 +58,10 @@ $listingUnos1->dodajMegabajte(430);
 
 
 //Metode InternetProvajder
-array_push($internetProvajder->listaKorisnika, $prepaidUser1, $prepaidUser2, $postpaidUser1, $postpaidUser2);
+array_push($internetProvajder->listaKorisnika, $prepaidUser1, $prepaidUser2, $postpaidUser1);
 
 $internetProvajder->generisiRacune();
 $internetProvajder->prikazPrepaidKorisnika();
 $internetProvajder->prikazPostpaidKorisnika();
+$internetProvajder->dodajKorisnika($postpaidUser2); //Novi korisnik
+$internetProvajder->dodajKorisnika($postpaidUser1); //Postojeci korisnik

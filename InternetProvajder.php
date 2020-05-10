@@ -84,7 +84,23 @@ class InternetProvajder
 
     public function dodajKorisnika(Korisnik $korisnik)
     {
-        // TODO dodajKorisnika
+        foreach ($this->listaKorisnika as $ugovor)
+        {
+            if ($ugovor->brojUgovora == $korisnik->brojUgovora)
+            {
+                echo "Korisnik sa brojem ugovora " . $korisnik->brojUgovora . " vec postoji!";
+                echo "<br>";
+                echo "<br>";
+                exit();
+
+            }
+
+        }
+
+        array_push($this->listaKorisnika, $korisnik);
+        echo "Uspesno ste dodali korisnika sa brojem ugovora " . $korisnik->brojUgovora;
+        echo "<br>";
+        echo "<br>";
 
     }
 

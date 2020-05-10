@@ -23,10 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternetProvajder.php" beforeDir="false" afterPath="$PROJECT_DIR$/InternetProvajder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListingUnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListingUnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="28758000" />
+      <workItem from="1589036361918" duration="34354000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>
@@ -122,6 +118,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1087" y="175" width="1080" height="1217" key="DiffContextDialog/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589036682667" />
+    <state x="1457" y="464" key="NewPhpClassDialog" timestamp="1589135312093">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1457" y="464" key="NewPhpClassDialog/0.23.2560.1417/-1920.111.1920.1200@0.23.2560.1417" timestamp="1589135312093" />
     <state x="1744" y="662" key="NewPhpFileDialog" timestamp="1589046415863">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
