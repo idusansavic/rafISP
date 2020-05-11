@@ -27,16 +27,17 @@ $viber = new TarifniDodatak(200, "Viber");
 $iptv = new TarifniDodatak(900, "IPTV");
 $fiksna = new TarifniDodatak(600, "Fiksna");
 
-//ListingUnos se poziva iz surfuj pa dodaj listing unos = new listingunos, takodje se zabelezi zaobracaj poziva kada korisnik surfuje
-$listingUnos1 = new ListingUnos("www.twitch.com", 230);
-$listingUnos2 = new ListingUnos("www.pornhub.com", 80424);
+//ListingUnos instance
+$listingUnos1 = new ListingUnos("www.facebook.com", 230);
+$listingUnos2 = new ListingUnos("www.twitter.com", 80424);
+$listingUnos3 = new ListingUnos("www.twitter.com", 60000);
 
 // PrepaidKorisnik instance
-$prepaidUser1 = new PrepaidKorisnik( 1500, $internetProvajder, "Petar", "Bojovic", "Kralja Petra 9", 101, $prepaidSilver, array($facebook, $instagram), array());
+$prepaidUser1 = new PrepaidKorisnik( 1500, $internetProvajder, "Petar", "Bojovic", "Kralja Petra 9", 101, $prepaidSilver, array($facebook, ), array());
 $prepaidUser2 = new PrepaidKorisnik( 500, $internetProvajder, "Frenki", " Radosavljevic", "Frenkijeva 666", 102, $prepaidGold, array(), array());
 
 // PostpaidKorisnik instance
-$postpaidUser1 = new PostpaidKorisnik( 500, $internetProvajder, "Todor", "Mihailovic", "Planeta Krypton 77", 103, $postpaidSilver, array($fiksna), array($listingUnos2
+$postpaidUser1 = new PostpaidKorisnik( 500, $internetProvajder, "Todor", "Mihailovic", "Planet Krypton 77", 103, $postpaidSilver, array($fiksna), array($listingUnos2
 ));
 $postpaidUser2 = new PostpaidKorisnik( 0, $internetProvajder, "Mike", "Tyson", "Beverly Hills 23", 104, $postpaidGold, array($iptv, $fiksna), array());
 
@@ -51,38 +52,52 @@ $prepaidUser1->dodajTarifniDodatak($iptv); //Dodatak koji se ne moze dodati
 echo "2. PREPAID KORISNIK DOPUNI KREDIT"; echo "<br>"; echo "<br>";
 $prepaidUser1->dopuniKredit(666);
 
+echo "3. PREPAID KORISNIK SURFUJ"; echo "<br>"; echo "<br>";
+
+
 //2. Metode PostpaidKorisnik
-echo "3. POSTPAID KORISNIK UKUPNO ZA NAPLATU"; echo "<br>"; echo "<br>";
+echo "4. POSTPAID KORISNIK UKUPNO ZA NAPLATU"; echo "<br>"; echo "<br>";
 $postpaidUser1->ukupnoZaNaplatu();
 
-echo "4. POSTPAID KORISNIK GENERISI RACUN"; echo "<br>"; echo "<br>";
+echo "5. POSTPAID KORISNIK GENERISI RACUN"; echo "<br>"; echo "<br>";
 $postpaidUser1->generisiRacun();
 
-echo "5. POSTPAID KORISNIK DODAJ TARIFNI DODATAK"; echo "<br>"; echo "<br>";
+echo "6. POSTPAID KORISNIK DODAJ TARIFNI DODATAK"; echo "<br>"; echo "<br>";
 $postpaidUser1->dodajTarifniDodatak($iptv); //Dodatak koji se moze dodati
 $postpaidUser1->dodajTarifniDodatak($fiksna); //Dodatak koji vec postoji
 $postpaidUser1->dodajTarifniDodatak($facebook); //Dodatak koji se ne moze dodati
 
+echo "7. POSTPAID KORISNIK SURFUJ"; echo "<br>"; echo "<br>";
+
+
 //3. Metoda ListingUnos
-echo "6. LISTING UNOS DODAJ MEGABAJTE"; echo "<br>"; echo "<br>";
+echo "8. LISTING UNOS DODAJ MEGABAJTE"; echo "<br>"; echo "<br>";
 $listingUnos1->dodajMegabajte(430);
 
 //4. Metode InternetProvajder
 array_push($internetProvajder->listaKorisnika, $prepaidUser1, $prepaidUser2, $postpaidUser1);
 
-echo "7. INTERNET PROVAJDER GENERISI RACUNE"; echo "<br>"; echo "<br>";
+echo "9. INTERNET PROVAJDER GENERISI RACUNE"; echo "<br>"; echo "<br>";
 $internetProvajder->generisiRacune();
 
-echo "8. INTERNET PROVAJDER PRIKAZ PREPAID KORISNIKA"; echo "<br>"; echo "<br>";
+echo "10. INTERNET PROVAJDER ZABELEZI SAOBRACAJ"; echo "<br>"; echo "<br>";
+
+
+echo "11. INTERNET PROVAJDER PRIKAZ PREPAID KORISNIKA"; echo "<br>"; echo "<br>";
 $internetProvajder->prikazPrepaidKorisnika();
 
-echo "9. INTERNET PROVAJDER PRIKAZ POSTPAID KORISNIKA"; echo "<br>"; echo "<br>";
+echo "12. INTERNET PROVAJDER PRIKAZ POSTPAID KORISNIKA"; echo "<br>"; echo "<br>";
 $internetProvajder->prikazPostpaidKorisnika();
 
-echo "10. INTERNET PROVAJDER DODAJ KORISNIKA"; echo "<br>"; echo "<br>";
+echo "13. INTERNET PROVAJDER DODAJ KORISNIKA"; echo "<br>"; echo "<br>";
 $internetProvajder->dodajKorisnika($postpaidUser2); //Novi korisnik
 $internetProvajder->dodajKorisnika($postpaidUser1); //Postojeci korisnik
 
 //5. Metode Korisnik
-echo "11. KORISNIK DODAJ LISTIN UNOS"; echo "<br>"; echo "<br>";
-$postpaidUser1->dodajListingUnos($listingUnos2);
+echo "14. KORISNIK DODAJ LISTING UNOS"; echo "<br>"; echo "<br>";
+$prepaidUser1->dodajListingUnos($listingUnos3); //Postojeci listing unos
+$prepaidUser1->dodajListingUnos($listingUnos2); //Postojeci listing unos
+$prepaidUser1->dodajListingUnos($listingUnos1); //Nepostojeci listing unos
+
+echo "15. KORISNIK NAPRAVI LISTING"; echo "<br>"; echo "<br>";
+$postpaidUser1->napraviListing();

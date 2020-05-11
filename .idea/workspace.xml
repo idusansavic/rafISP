@@ -25,8 +25,6 @@
       <change beforePath="$PROJECT_DIR$/InternetProvajder.php" beforeDir="false" afterPath="$PROJECT_DIR$/InternetProvajder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Korisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/Korisnik.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListingUnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListingUnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="40900000" />
+      <workItem from="1589036361918" duration="46298000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>

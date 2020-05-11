@@ -1,7 +1,7 @@
 <?php
 
 require_once "Korisnik.php";
-
+require_once "IzradaListinga.php";
 
 class ListingUnos
 {

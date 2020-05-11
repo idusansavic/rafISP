@@ -49,10 +49,7 @@ abstract class Korisnik implements IzradaListinga
             if ($unos->url == $listingUnos->url)
             {
                 $unos->dodajMegabajte($listingUnos->mb);
-                echo "Dodali ste MB za postojeci listing unos, adresa " . $listingUnos->url;
-                echo "<br>";
-                echo "<br>";
-
+                return;
 
             }
 
@@ -67,8 +64,8 @@ abstract class Korisnik implements IzradaListinga
 
     public function napraviListing() : string
     {
+        //ToDo napraviListing() metoda
         return "";
-        // TODO: Implement napraviListing() method.
 
     }
 

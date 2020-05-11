@@ -91,7 +91,7 @@ class InternetProvajder
                 echo "Korisnik sa brojem ugovora " . $korisnik->brojUgovora . " vec postoji!";
                 echo "<br>";
                 echo "<br>";
-                exit();
+                return;
 
             }
 
