@@ -5,13 +5,14 @@ require_once "Korisnik.php";
 class InternetProvajder
 {
     public string $ime;
-    public array $listaKorisnika;
+    public array $listaKorisnika = [];
 
     /**
      * InternetProvajder constructor.
      * @param $ime
      * @param $listaKorisnika
      */
+
     public function __construct(string $ime, array $listaKorisnika)
     {
         $this->ime = $ime;

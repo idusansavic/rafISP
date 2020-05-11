@@ -82,6 +82,7 @@ abstract class Korisnik implements IzradaListinga
         return $listing;
     }
 
+
     abstract function surfuj(string $url, int $mb) : bool;
 
     abstract function dodajTarifniDodatak(TarifniDodatak $tarifniDodatak);
