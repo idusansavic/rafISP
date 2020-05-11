@@ -68,7 +68,7 @@ class PostpaidKorisnik extends Korisnik
         {
             echo "Ne mozete dodati. Korisnik vec ima " . $tarifniDodatak->tipDodatka . " tarifni dodatak. <br><br>";
         }
-        elseif ($this instanceof PostpaidKorisnik)
+        elseif ($this->tarifniPaket->neogranicenSaobracaj)
         {
             if ($tarifniDodatak->tipDodatka == "IPTV" or $tarifniDodatak->tipDodatka == "Fiksna")
             {
@@ -77,15 +77,51 @@ class PostpaidKorisnik extends Korisnik
 
             } else
             {
-                echo "Ne mozete dodati " . $tarifniDodatak->tipDodatka . " tarifni dodatak POSTPAID korisniku! <br><br>";
+                echo "Ne mozete dodati " . $tarifniDodatak->tipDodatka . " Korisnik ima neograniceni internet! <br><br>";
             }
+        }
+        elseif (!($this->tarifniPaket->neogranicenSaobracaj))
+        {
+            array_push($this->tarifniDodaci, $tarifniDodatak);
+            echo "Uspesno ste dodali " . $tarifniDodatak->tipDodatka . " tarifni dodatak.<br><br>";
         }
     }
 
+
     public function surfuj(string $url, int $mb) : bool
     {
+
+        if ($this->tarifniPaket->neogranicenSaobracaj)
+        {
+            $this->internetProvajder->zabeleziSaobracaj($this,$url,$mb);
+            $listing = new ListingUnos($url, $mb);
+            $this->dodajListingUnos($listing);
+            echo "Korisnik " . $this->brojUgovora . " je posetio " . $url . " i ima neograniceni internet. <br><br>";
+            return true;
+        }
+
+        foreach ($this->tarifniDodaci as $dodatak) {
+            if (strstr(strtolower($url), strtolower($dodatak->tipDodatka))) {
+                $this->internetProvajder->zabeleziSaobracaj($this, $url, $mb);
+                $listing = new ListingUnos($url, $mb);
+                $this->dodajListingUnos($listing);
+                echo "Korisnik " . $this->brojUgovora . " je besplatno posetio " . $url . " jer ima " . $dodatak->tipdodatka . " dodatak. <br><br>";
+                return true;
+            }
+        }
+
+        $this->tarifniPaket->mb -= $mb;
+        if ($this->tarifniPaket->mb < 0)
+        {
+            $this->prekoracenje += (-1 * ($this->tarifniPaket->mb * $this->tarifniPaket->cenaPoMegabajtu));
+            $this->tarifniPaket->mb = 0;
+            echo "Korisnik " . $this->brojUgovora . " je prekoracio broj Mb, i duguje " . $this->prekoracenje . " rsd.<br><br>";
+        }
+
+        $this->internetProvajder->zabeleziSaobracaj($this, $url, $mb);
+        $listing = new ListingUnos($url, $mb);
+        $this->dodajListingUnos($listing);
         return true;
-        // TODO: Implement surfuj() method.
     }
 }
 
