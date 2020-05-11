@@ -5,7 +5,6 @@ require_once "InternetProvajder.php";
 require_once "TarifniPaket.php";
 require_once "TarifniDodatak.php";
 
-
 class PrepaidKorisnik extends Korisnik
 {
     public float $kredit;
