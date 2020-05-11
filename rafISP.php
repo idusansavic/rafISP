@@ -14,6 +14,7 @@ require_once "TarifniDodatak.php";
 $internetProvajder = new InternetProvajder("SBB", array());
 
 //TarifniPaket instance
+$prepaidDuo = new TarifniPaket(50, 1500, false, 102400, 0.01464 );
 $prepaidSilver = new TarifniPaket(100, 1500, false, 102400, 0.01464 );
 $prepaidGold = new TarifniPaket(200, 2000, false, 204800, 0.00976 );
 $postpaidBronze = new TarifniPaket(100, 2000, false, 0, 0.00976 );
@@ -37,7 +38,7 @@ $listingUnos4 = new ListingUnos("www.twitch.com", 8000);
 $listingUnos5 = new ListingUnos("www.pornhub.com", 237000);
 
 // PrepaidKorisnik instance
-$prepaidUser1 = new PrepaidKorisnik( 400, $internetProvajder, "Petar", "Bojovic", "Kralja Petra 9", 101, $prepaidSilver, array($facebook), array());
+$prepaidUser1 = new PrepaidKorisnik( 2000, $internetProvajder, "Petar", "Bojovic", "Kralja Petra 9", 101, $prepaidSilver, array($facebook), array());
 $prepaidUser2 = new PrepaidKorisnik( 0, $internetProvajder, "Frenki", " Radosavljevic", "Frenkijeva 666", 102, $prepaidGold, array(), array());
 
 // PostpaidKorisnik instance
@@ -59,6 +60,12 @@ echo "2. PREPAID KORISNIK DOPUNI KREDIT"; echo "<br><br>";
 $prepaidUser1->dopuniKredit(666);
 
 echo "3. PREPAID KORISNIK SURFUJ"; echo "<br><br>";
+echo "SURF 1 <br>";
+$prepaidUser1->surfuj("www.facebook.com", 122000); // Ima dodatak
+echo "SURF 2 <br>";
+$prepaidUser1->surfuj("www.pornhub.com", 5000); // Ima kredita
+echo "SURF 3 <br>";
+$prepaidUser2->surfuj("www.pornhub.com", 122000); // Nema kredita
 
 
 //2. Metode PostpaidKorisnik

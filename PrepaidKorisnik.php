@@ -59,10 +59,31 @@ class PrepaidKorisnik extends Korisnik
 
     public function surfuj(string $url, int $mb) : bool
     {
-        return true;
-        // TODO: Implement surfuj() method.
+        foreach ($this->tarifniDodaci as $dodatak) {
+            if (strstr(strtolower($url), strtolower($dodatak->tipDodatka)))  {
+                $this->internetProvajder->zabeleziSaobracaj($this, $url, $mb);
+                $listing = new ListingUnos($url, $mb);
+                $this->dodajListingUnos($listing);
+                echo "Korisnik " . $this->brojUgovora . " je besplatno posetio " . $url . " jer ima " . $dodatak->tipdodatka . " dodatak. <br><br>";
+                return true;
+            }
+        }
+
+        $cenaPosete = $mb * $this->tarifniPaket->cenaPoMegabajtu;
+        if ($this->kredit >= $cenaPosete)
+        {
+            $this->internetProvajder->zabeleziSaobracaj($this,$url,$mb);
+            $listing = new ListingUnos($url,$mb);
+            $this->dodajListingUnos($listing);
+            $this->kredit -= $cenaPosete;
+            echo "Sa racuna je skinuto " . $cenaPosete . " kredita.<br><br>";
+            return true;
+        }
+        else
+        {
+            echo "Nemate dovoljno kredita, molimo dopunite kredit.<br><br>";
+            return  false;
+        }
     }
-
-
 }
 

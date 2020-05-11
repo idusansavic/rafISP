@@ -22,7 +22,7 @@
     <list default="true" id="8cdefb97-afb7-43f0-9f8a-5a83c2865534" name="Default Changelist" comment="Male izmene i vracanje atributa">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/idusansavic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostpaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostpaidKorisnik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrepaidKorisnik.php" beforeDir="false" afterPath="$PROJECT_DIR$/PrepaidKorisnik.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rafISP.php" beforeDir="false" afterPath="$PROJECT_DIR$/rafISP.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589036360413</updated>
-      <workItem from="1589036361918" duration="64550000" />
+      <workItem from="1589036361918" duration="66003000" />
     </task>
     <task id="LOCAL-00001" summary="Nesto">
       <created>1589036605239</created>
