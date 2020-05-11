@@ -23,64 +23,56 @@ class InternetProvajder
     {
         foreach ($this->listaKorisnika as $korisnik)
         {
-            if ($korisnik->tarifniPaket->neogranicenSaobracaj == "true")
+            if ($korisnik instanceof PostpaidKorisnik)
             {
                 $korisnik->generisiRacun();
-
             }
         }
-
     }
+
 
     public function zabeleziSaobracaj(Korisnik $korisnik, string $url, int $mb)
     {
-        // TODO zabeleziSaobracaj
+        $zabelezenSaobracaj = "Korisnik " . $korisnik->brojUgovora . " ostvario saobracaj ka adresi " . $url . " , potroseno " . $mb . " Mb.<br><br>";
+        echo $zabelezenSaobracaj;
     }
+
 
     public function prikazPrepaidKorisnika()
     {
+        $prikaz = "";
         foreach ($this->listaKorisnika as $korisnik) {
             if ($korisnik instanceof PrepaidKorisnik) {
-                echo "Broj ugovora: " . $korisnik->brojUgovora;
-                echo "<br>";
-                echo "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime;
-                echo "<br>";
-                echo "Stanje kredita: " . $korisnik->kredit . " rsd;";
-                echo "<br>";
-                echo "Tarifni dodaci: ";
+                $prikaz .= "<br><br>Broj ugovora: " . $korisnik->brojUgovora . "<br>";
+                $prikaz .= "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime . "<br>";
+                $prikaz .= "Stanje kredita: " . $korisnik->kredit . " rsd;<br>";
+                $prikaz .= "Tarifni dodaci: ";
                 foreach ($korisnik->tarifniDodaci as $dodatak) {
-                    echo "- " . $dodatak->tipDodatka . "; ";
+                    $prikaz .= "- " . $dodatak->tipDodatka . "; ";
                 }
-                echo "<br>";
-                echo "<br>";
-
             }
-
         }
+        echo $prikaz . "<br><br>";
     }
+
 
     public function prikazPostpaidKorisnika()
     {
+        $prikaz = "";
         foreach ($this->listaKorisnika as $korisnik) {
             if ($korisnik instanceof PostpaidKorisnik) {
-                echo "Broj ugovora: " . $korisnik->brojUgovora;
-                echo "<br>";
-                echo "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime;
-                echo "<br>";
-                echo "Brzina: " . $korisnik->tarifniPaket->maksimalnaBrzina . " Mbps;";
-                echo "<br>";
-                echo "Tarifni dodaci: ";
+                $prikaz .= "<br><br>Broj ugovora: " . $korisnik->brojUgovora . "<br>";
+                $prikaz .= "Korisnik: " . $korisnik->ime . " " . $korisnik->prezime . "<br>";
+                $prikaz .= "Brzina: " . $korisnik->tarifniPaket->maksimalnaBrzina . " Mbps;<br>";
+                $prikaz .= "Tarifni dodaci: ";
                 foreach ($korisnik->tarifniDodaci as $dodatak) {
-                    echo "- " . $dodatak->tipDodatka . "; ";
+                    $prikaz .= "- " . $dodatak->tipDodatka . "; ";
                 }
-                echo "<br>";
-                echo "<br>";
-
             }
-
         }
-
+        echo $prikaz . "<br><br>";
     }
+
 
     public function dodajKorisnika(Korisnik $korisnik)
     {
@@ -88,21 +80,11 @@ class InternetProvajder
         {
             if ($ugovor->brojUgovora == $korisnik->brojUgovora)
             {
-                echo "Korisnik sa brojem ugovora " . $korisnik->brojUgovora . " vec postoji!";
-                echo "<br>";
-                echo "<br>";
+                echo "Korisnik sa brojem ugovora " . $korisnik->brojUgovora . " vec postoji!<br><br>";
                 return;
-
             }
-
         }
-
         array_push($this->listaKorisnika, $korisnik);
-        echo "Uspesno ste dodali korisnika sa brojem ugovora " . $korisnik->brojUgovora;
-        echo "<br>";
-        echo "<br>";
-
+        echo "Uspesno ste dodali korisnika sa brojem ugovora " . $korisnik->brojUgovora . ".<br><br>";
     }
-
-
 }

@@ -2,9 +2,11 @@
   <dictionary name="idusansavic">
     <words>
       <w>adresa</w>
+      <w>adresi</w>
       <w>adresu</w>
       <w>bojovic</w>
       <w>broj</w>
+      <w>brojem</w>
       <w>brzina</w>
       <w>cena</w>
       <w>dinara</w>
@@ -25,6 +27,7 @@
       <w>iptv</w>
       <w>izrada</w>
       <w>kada</w>
+      <w>kame</w>
       <w>koji</w>
       <w>korisnik</w>
       <w>korisnika</w>
@@ -44,12 +47,14 @@
       <w>mihailovic</w>
       <w>moze</w>
       <w>mozete</w>
+      <w>muten</w>
       <w>naplatu</w>
       <w>napravi</w>
       <w>neogranicen</w>
       <w>nepostojeci</w>
       <w>novi</w>
       <w>objekata</w>
+      <w>ostvario</w>
       <w>paket</w>
       <w>paketa</w>
       <w>petar</w>
@@ -58,6 +63,7 @@
       <w>postojeci</w>
       <w>postoji</w>
       <w>postpaidd</w>
+      <w>potroseno</w>
       <w>povecani</w>
       <w>poziva</w>
       <w>prekoracenje</w>
@@ -67,6 +73,7 @@
       <w>racun</w>
       <w>racune</w>
       <w>radosavljevic</w>
+      <w>roshi</w>
       <w>saobracaj</w>
       <w>surfuj</w>
       <w>surfuje</w>
@@ -82,6 +89,7 @@
       <w>unosa</w>
       <w>uraditi</w>
       <w>uspesno</w>
+      <w>zabelezen</w>
       <w>zabelezi</w>
       <w>zaobracaj</w>
     </words>

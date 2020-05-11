@@ -16,6 +16,7 @@ class TarifniPaket
      * @param int $mb
      * @param float $cenaPoMegabajtu
      */
+
     public function __construct(int $maksimalnaBrzina, float $cenaPaketa, bool $neogranicenSaobracaj, int $mb, float $cenaPoMegabajtu)
     {
         $this->maksimalnaBrzina = $maksimalnaBrzina;
@@ -24,5 +25,4 @@ class TarifniPaket
         $this->mb = $mb;
         $this->cenaPoMegabajtu = $cenaPoMegabajtu;
     }
-
 }

@@ -29,15 +29,34 @@ class PrepaidKorisnik extends Korisnik
     }
 
 
-
     public function dopuniKredit(float $kredit)
     {
         $this->kredit += $kredit;
-        echo "Uspesno ste dopunili kredit, trenutno imate " . $this->kredit . " kredita";
-        echo "<br>";
-        echo "<br>";
+        echo "Uspesno ste dopunili kredit, trenutno imate " . $this->kredit . " kredita <br><br>";
 
     }
+
+
+    public function dodajTarifniDodatak(TarifniDodatak $tarifniDodatak)
+    {
+        if (in_array($tarifniDodatak, $this->tarifniDodaci))
+        {
+            echo "Ne mozete dodati. Korisnik vec ima " . $tarifniDodatak->tipDodatka . " tarifni dodatak. <br><br>";
+        }
+        elseif ($this instanceof PrepaidKorisnik)
+        {
+            if ($tarifniDodatak->tipDodatka == "IPTV" or $tarifniDodatak->tipDodatka == "Fiksna")
+            {
+                echo "Ne mozete dodati " . $tarifniDodatak->tipDodatka . " tarifni dodatak PREPAID korisniku! <br><br>";
+
+            } else
+            {
+                array_push($this->tarifniDodaci, $tarifniDodatak);
+                echo "Uspesno ste dodali " . $tarifniDodatak->tipDodatka . " tarifni dodatak. <br><br>";
+            }
+        }
+    }
+
 
     public function surfuj(string $url, int $mb) : bool
     {
@@ -45,32 +64,6 @@ class PrepaidKorisnik extends Korisnik
         // TODO: Implement surfuj() method.
     }
 
-    public function dodajTarifniDodatak(TarifniDodatak $tarifniDodatak)
-    {
-        if (in_array($tarifniDodatak, $this->tarifniDodaci))
-        {
-            echo "Ne mozete dodati. Korisnik vec ima " . $tarifniDodatak->tipDodatka . " tarifni dodatak.";
-            echo "<br>";
-            echo "<br>";
-        }
-        elseif ($this instanceof PrepaidKorisnik)
-        {
-            if ($tarifniDodatak->tipDodatka == "IPTV" or $tarifniDodatak->tipDodatka == "Fiksna")
-            {
-                echo "Ne mozete dodati " . $tarifniDodatak->tipDodatka . " tarifni dodatak PREPAID korisniku!";
-                echo "<br>";
-                echo "<br>";
-            } else
-            {
-                array_push($this->tarifniDodaci, $tarifniDodatak);
-                echo "Uspesno ste dodali " . $tarifniDodatak->tipDodatka . " tarifni dodatak.";
-                echo "<br>";
-                echo "<br>";
-            }
-
-
-        }
-    }
 
 }
 

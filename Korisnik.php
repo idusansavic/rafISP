@@ -50,27 +50,39 @@ abstract class Korisnik implements IzradaListinga
             {
                 $unos->dodajMegabajte($listingUnos->mb);
                 return;
-
             }
-
         }
-
         array_push($this->listaListingUnosa, $listingUnos);
-        echo "Dodali ste novi listing unos za adresu " . $listingUnos->url;
-        echo "<br>";
-        echo "<br>";
-
+        echo "Dodali ste novi listing unos za adresu " . $listingUnos->url . "<br><br>";
     }
+
 
     public function napraviListing() : string
     {
-        //ToDo napraviListing() metoda
-        return "";
+        $n = count($this->listaListingUnosa);
+        for ($i = 0; $i < $n-1; $i++)
+        {
+            $min = $i;
+            for ($j = $i+1; $j < $n; $j++)
+                if ($this->listaListingUnosa[$j]->mb > $this->listaListingUnosa[$min]->mb)
+                    $min = $j;
 
+            $temp = $this->listaListingUnosa[$min];
+            $this->listaListingUnosa[$min] = $this->listaListingUnosa[$i];
+            $this->listaListingUnosa[$i] = $temp;
+        }
+
+        $listing = "";
+        foreach ($this->listaListingUnosa as $unos)
+        {
+            $listing .= "URL: " . $unos->url;
+            $listing .= " MB: " . $unos->mb . "<br>";
+        }
+        echo "LISTING <br> Korisnik: " . $this->ime . " " . $this->prezime . "<br>Broj ugovora: " . $this->brojUgovora . "<br><br>" . $listing;
+        return $listing;
     }
 
     abstract function surfuj(string $url, int $mb) : bool;
 
     abstract function dodajTarifniDodatak(TarifniDodatak $tarifniDodatak);
-
 }

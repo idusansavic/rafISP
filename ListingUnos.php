@@ -24,12 +24,7 @@ class ListingUnos
     public function dodajMegabajte(int $mb)
     {
         $this->mb += $mb;
-        echo ("Povecani megabajti za " . $this->url . ".");
-        echo "<br>";
-        echo "<br>";
+        echo ("Povecani megabajti za " . $this->url . ". <br><br>");
 
     }
-
-
-
 }
